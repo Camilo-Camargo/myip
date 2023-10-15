@@ -6,8 +6,8 @@
 
 #define MYIP_DEBUG 1
 #define MYIP_LOG(format, ...) if(MYIP_DEBUG) fprintf(stdout, "[LOG] " format "\n", ##__VA_ARGS__)
-#define MYIP_LOG_WARN(format, ...) if(MYIP_DEBUG) fprintf(stdout, "[WARN] " format "\n", ##__VA_ARGS__)
-#define MYIP_LOG_ERROR(format, ...) if(MYIP_DEBUG) fprintf(stderr, "[ERROR] " format "\n", ##__VA_ARGS__)
+#define MYIP_WARN(format, ...) fprintf(stdout, "[WARN] " format "\n", ##__VA_ARGS__)
+#define MYIP_ERROR(format, ...) fprintf(stderr, "[ERROR] " format "\n", ##__VA_ARGS__)
 
 struct _MYIP_Generic_Item;
 typedef struct _MYIP_Generic_Item MYIP_Item;
