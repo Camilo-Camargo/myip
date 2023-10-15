@@ -13,6 +13,7 @@ struct _MYIP_Generic_Item;
 typedef struct _MYIP_Generic_Item MYIP_Item;
 
 void MYIP_init();
+void MYIP_print_address();
 void MYIP_close();
 
 #endif

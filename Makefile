@@ -6,7 +6,7 @@ BINARY_DIR = bin
 # Windows configuration
 WIN_DIR = windows
 WIN_CC = x86_64-w64-mingw32-cc
-WIN_LIBS = ./$(WIN_DIR)/adapter.o
+WIN_LIBS = ./$(WIN_DIR)/adapter.o -lwsock32 -liphlpapi -lws2_32
 WIN_EXEC = wine
 WIN_BINARY_PATH = $(BINARY_DIR)/$(PROG_NAME).exe
 # Unix configuration
