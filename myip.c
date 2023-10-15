@@ -3,5 +3,5 @@
 #include <stdio.h>
 
 int main(){
-  printf("version: %s\n", MYIP_VERSION);
+  MYIP_LOG("current version: %s", MYIP_VERSION);
 }
