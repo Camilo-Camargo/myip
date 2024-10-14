@@ -4,7 +4,7 @@
 
 #include <stdio.h>
 
-#define MYIP_DEBUG 1
+#define MYIP_DEBUG 0
 #define MYIP_LOG(format, ...) if(MYIP_DEBUG) fprintf(stdout, "[LOG] " format "\n", ##__VA_ARGS__)
 #define MYIP_WARN(format, ...) fprintf(stdout, "[WARN] " format "\n", ##__VA_ARGS__)
 #define MYIP_ERROR(format, ...) fprintf(stderr, "[ERROR] " format "\n", ##__VA_ARGS__)

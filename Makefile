@@ -54,5 +54,3 @@ clean:
 
 run:
 	$(EXEC) ./$(BINARY_PATH)
-
-
