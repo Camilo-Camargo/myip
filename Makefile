@@ -54,7 +54,7 @@ clean:
 
 # Run using root priviledges
 install:
-	cp /bin/myip /usr/local/bin
+	cp ./$(UNIX_BINARY_PATH) /usr/local/bin
 
 run:
 	$(EXEC) ./$(BINARY_PATH)
