@@ -52,5 +52,9 @@ clean:
 	cd $(PLATFORM_DIR) && make clean
 	rm -rf $(BINARY_DIR)
 
+# Run using root priviledges
+install:
+	cp /bin/myip /usr/local/bin
+
 run:
 	$(EXEC) ./$(BINARY_PATH)
